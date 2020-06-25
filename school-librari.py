@@ -4,14 +4,26 @@ a = {
 "nesh" : "1234",
 "sharon": "sharon2008"
 }
-b = input("please input your username: ")
-c = input("please input your pasword: ")
-if b != a.keys():   
-    print("no such user exists")
-elif c != b.value():
-    print("wrong passwored")
-else:
-    print("welcome")
+complete = False
+user = {"malli" : "Malli2010", "nesh" : "1234" }
+ 
+while not complete:
+    username = input("Username: ")
+    password = input("Password: ")
+    if username == user and password == password:
+        continue
+    elif username not in user:
+        print("This is not a valid username, input username again!")
+        continue
+    elif password != user[username]:
+        
+        print("Password is not valid for username.")
+        continue
+    elif password == user[username]:
+        print("Welcome username ")
+        print("Thank you for logging on. ")
+        complete = True
+print ("Username and Password Validated in Python")     
     def categoris():
         print("these are the categorys we have")
         print(
@@ -51,7 +63,7 @@ else:
                     categoris()  
                 elif z == "no":
                     print("Make shure that you return the book " 
-                    if d == "a" and "b"
+                    if d == "a" and "b":
                           print("books")
                     elif d == "a" or "b":
                           print("book")
